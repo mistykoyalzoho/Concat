@@ -1,0 +1,23 @@
+format = 2
+
+[effect]
+id = "concat.iris-open"
+name = "Iris Open"
+kind = "transition"
+category = "Basic"
+shelves = ["Basic"]
+order = 79
+description = "The incoming picture opens out of the middle of the outgoing one."
+
+[[param]]
+key = "softness"
+label = "Softness"
+min = 0
+max = 50
+default = 10
+step = 1
+unit = "%"
+
+[transition]
+entry = "effect.wgsl"
+fallback = "cross-fade"

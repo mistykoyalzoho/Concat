@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.anamorphic-streak"
+name = "Anamorphic Streak"
+kind = "effect"
+category = "Light"
+shelves = ["Light & Shadow", "Optical & Lens"]
+order = 71
+description = "Highlights past white smear sideways into a cold anamorphic streak."
+
+[[param]]
+key = "amount"
+label = "Amount"
+min = 0
+max = 100
+default = 60
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"

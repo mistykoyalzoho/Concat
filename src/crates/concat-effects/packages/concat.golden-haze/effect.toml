@@ -1,0 +1,13 @@
+format = 2
+
+[effect]
+id = "concat.golden-haze"
+name = "Golden Haze"
+kind = "filter"
+category = "Cinematic"
+shelves = ["Cinematic", "Scenery"]
+order = 76
+description = "Slightly held-back contrast lifting the whole frame into late sun."
+
+[wgsl]
+entry = "effect.wgsl"

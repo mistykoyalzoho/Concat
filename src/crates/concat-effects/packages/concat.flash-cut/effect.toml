@@ -1,0 +1,23 @@
+format = 2
+
+[effect]
+id = "concat.flash-cut"
+name = "Flash Cut"
+kind = "transition"
+category = "Light"
+shelves = ["Light & Shadow"]
+order = 78
+description = "The cut rides a flash of white that peaks in the middle and burns away."
+
+[[param]]
+key = "amount"
+label = "Amount"
+min = 0
+max = 100
+default = 60
+step = 1
+unit = "%"
+
+[transition]
+entry = "effect.wgsl"
+fallback = "cross-fade"

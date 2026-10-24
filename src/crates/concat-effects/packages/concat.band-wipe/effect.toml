@@ -1,0 +1,23 @@
+format = 2
+
+[effect]
+id = "concat.band-wipe"
+name = "Band"
+kind = "transition"
+category = "Wipe"
+shelves = ["Wipe"]
+order = 77
+description = "A diagonal edge travels the frame, its softness set by the slider."
+
+[[param]]
+key = "softness"
+label = "Softness"
+min = 0
+max = 50
+default = 10
+step = 1
+unit = "%"
+
+[transition]
+entry = "effect.wgsl"
+fallback = "cross-fade"

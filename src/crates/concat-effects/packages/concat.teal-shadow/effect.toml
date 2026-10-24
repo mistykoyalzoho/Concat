@@ -1,0 +1,13 @@
+format = 2
+
+[effect]
+id = "concat.teal-shadow"
+name = "Teal Shadow"
+kind = "filter"
+category = "Cinematic"
+shelves = ["Cinematic"]
+order = 75
+description = "A cool push through the toe under a slightly warmed highlight."
+
+[wgsl]
+entry = "effect.wgsl"

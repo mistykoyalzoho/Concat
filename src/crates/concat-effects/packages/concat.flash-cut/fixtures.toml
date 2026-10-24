@@ -1,0 +1,22 @@
+[[probe]]
+name = "default, half way"
+input = [0.2, 0.3, 0.4, 1.0]
+to = [0.8, 0.6, 0.2, 1.0]
+progress = 0.5
+expect = [1.1, 1.05, 0.9, 1.0]
+
+[[probe]]
+name = "minimum, half way"
+at = "min"
+input = [0.2, 0.3, 0.4, 1.0]
+to = [0.8, 0.6, 0.2, 1.0]
+progress = 0.5
+expect = [0.5, 0.45, 0.3, 1.0]
+
+[[probe]]
+name = "maximum, half way"
+at = "max"
+input = [0.2, 0.3, 0.4, 1.0]
+to = [0.8, 0.6, 0.2, 1.0]
+progress = 0.5
+expect = [1.5, 1.45, 1.3, 1.0]
