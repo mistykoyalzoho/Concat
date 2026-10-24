@@ -1,0 +1,24 @@
+[[probe]]
+name = "default, at the mid pixel"
+
+input = [0.8, 0.5, 0.3, 1.0]
+to = [0.05, 0.15, 0.4, 1.0]
+progress = 0.5625
+expect = [1.044644, 0.744644, 0.544644, 1.0]
+
+[[probe]]
+name = "minimum, at the mid pixel"
+at = "min"
+input = [0.8, 0.5, 0.3, 1.0]
+to = [0.05, 0.15, 0.4, 1.0]
+progress = 0.5625
+expect = [0.8, 0.5, 0.3, 1.0]
+
+[[probe]]
+name = "maximum, at the mid pixel"
+at = "max"
+input = [0.8, 0.5, 0.3, 1.0]
+to = [0.05, 0.15, 0.4, 1.0]
+progress = 0.5625
+expect = [1.284644, 0.984644, 0.784644, 1.0]
+

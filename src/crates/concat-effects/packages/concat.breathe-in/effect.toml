@@ -1,0 +1,24 @@
+format = 2
+
+[effect]
+id = "concat.breathe-in"
+name = "Breathe In"
+kind = "transition"
+category = "Zoom"
+shelves = ["Zoom"]
+order = 106
+description = "The outgoing shot zooms into its own middle while the incoming pushes out past it."
+
+[[param]]
+key = "strength"
+label = "Strength"
+min = 0
+max = 100
+default = 50
+step = 1
+unit = "%"
+
+[transition]
+entry = "effect.wgsl"
+xfade = "zoomin"
+fallback = "cross-fade"

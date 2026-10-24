@@ -1,0 +1,24 @@
+format = 2
+
+[effect]
+id = "concat.bounce-slide"
+name = "Bounce Slide"
+kind = "transition"
+category = "Slide"
+shelves = ["Slide"]
+order = 103
+description = "The incoming shot slides in and overshoots its landing point before settling."
+
+[[param]]
+key = "bounce"
+label = "Bounce"
+min = 0
+max = 40
+default = 20
+step = 1
+unit = "%"
+
+[transition]
+entry = "effect.wgsl"
+xfade = "slideleft"
+fallback = "cross-fade"

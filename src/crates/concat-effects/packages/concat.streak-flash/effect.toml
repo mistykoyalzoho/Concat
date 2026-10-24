@@ -1,0 +1,24 @@
+format = 2
+
+[effect]
+id = "concat.streak-flash"
+name = "Streak Flash"
+kind = "transition"
+category = "Light"
+shelves = ["Light"]
+order = 99
+description = "A bright streak sweeps across between the two shots and carries the eye with it."
+
+[[param]]
+key = "speed"
+label = "Speed"
+min = 0
+max = 100
+default = 60
+step = 1
+unit = "%"
+
+[transition]
+entry = "effect.wgsl"
+xfade = "wipeleft"
+fallback = "cross-fade"

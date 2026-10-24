@@ -1,0 +1,15 @@
+format = 2
+
+[effect]
+id = "concat.scatter-dissolve"
+name = "Scatter Dissolve"
+kind = "transition"
+category = "Dissolve"
+shelves = ["Dissolve"]
+order = 101
+description = "Each pixel turns over at its own time, so the shot breaks up unevenly."
+
+[transition]
+entry = "effect.wgsl"
+xfade = "dissolve"
+fallback = "cross-fade"

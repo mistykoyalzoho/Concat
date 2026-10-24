@@ -1,0 +1,24 @@
+format = 2
+
+[effect]
+id = "concat.stripes-dissolve"
+name = "Stripes Dissolve"
+kind = "transition"
+category = "Dissolve"
+shelves = ["Dissolve"]
+order = 102
+description = "Vertical bands of the frame turn over one by one from the left."
+
+[[param]]
+key = "count"
+label = "Count"
+min = 4
+max = 32
+default = 16
+step = 1
+unit = ""
+
+[transition]
+entry = "effect.wgsl"
+xfade = "vuslice"
+fallback = "cross-fade"

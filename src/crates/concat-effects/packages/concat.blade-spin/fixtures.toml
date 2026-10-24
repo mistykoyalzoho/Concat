@@ -1,0 +1,8 @@
+[[probe]]
+name = "default, at the mid pixel"
+
+input = [0.8, 0.5, 0.3, 1.0]
+to = [0.05, 0.15, 0.4, 1.0]
+progress = 0.84915
+expect = [0.425004, 0.325002, 0.349999, 1.0]
+

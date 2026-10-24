@@ -1,0 +1,24 @@
+format = 2
+
+[effect]
+id = "concat.letterbox"
+name = "Letterbox"
+kind = "transition"
+category = "Wipe"
+shelves = ["Wipe"]
+order = 96
+description = "Black bars slide in and meet, the screenshot crosses behind them, they slide off."
+
+[[param]]
+key = "softness"
+label = "Softness"
+min = 0
+max = 50
+default = 10
+step = 1
+unit = "%"
+
+[transition]
+entry = "effect.wgsl"
+xfade = "rectcrop"
+fallback = "cross-fade"

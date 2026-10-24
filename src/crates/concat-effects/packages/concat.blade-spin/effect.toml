@@ -1,0 +1,15 @@
+format = 2
+
+[effect]
+id = "concat.blade-spin"
+name = "Blade Spin"
+kind = "transition"
+category = "Spin"
+shelves = ["Spin"]
+order = 105
+description = "The outgoing shot spins and shrinks about its middle until it is gone."
+
+[transition]
+entry = "effect.wgsl"
+xfade = "radial"
+fallback = "cross-fade"
