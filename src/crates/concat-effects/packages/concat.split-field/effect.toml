@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.split-field"
+name = "Split Field"
+kind = "effect"
+category = "Blur"
+shelves = ["Optical & Lens"]
+order = 82
+description = "Two halves split on a soft line, the upper warmer and the lower cooler."
+
+[[param]]
+key = "split"
+label = "Split"
+min = 0
+max = 100
+default = 50
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"

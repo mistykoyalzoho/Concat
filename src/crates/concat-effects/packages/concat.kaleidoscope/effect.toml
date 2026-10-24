@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.kaleidoscope"
+name = "Kaleidoscope"
+kind = "effect"
+category = "Distort"
+shelves = ["Optical & Lens", "Distortion & Glitch"]
+order = 80
+description = "The frame folded into mirrored wedges about its middle, each wedge shaded."
+
+[[param]]
+key = "segments"
+label = "Segments"
+min = 3
+max = 12
+default = 6
+step = 1
+unit = ""
+
+[wgsl]
+entry = "effect.wgsl"

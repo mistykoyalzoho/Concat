@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.tilt-shift"
+name = "Tilt Shift"
+kind = "effect"
+category = "Blur"
+shelves = ["Optical & Lens"]
+order = 81
+description = "A band across the middle kept sharp over a blurred frame, the miniature look."
+
+[[param]]
+key = "focus"
+label = "Focus"
+min = 10
+max = 60
+default = 30
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"

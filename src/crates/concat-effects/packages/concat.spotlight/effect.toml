@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.spotlight"
+name = "Spotlight"
+kind = "effect"
+category = "Light"
+shelves = ["Party & Club"]
+order = 90
+description = "One lamp sweeping the frame, everything outside its pool held down to a quarter."
+
+[[param]]
+key = "size"
+label = "Size"
+min = 10
+max = 100
+default = 45
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"

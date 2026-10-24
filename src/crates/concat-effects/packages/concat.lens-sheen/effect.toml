@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.lens-sheen"
+name = "Lens Sheen"
+kind = "effect"
+category = "Light"
+shelves = ["Optical & Lens"]
+order = 83
+description = "A soft diagonal reflection laid over the picture, as glass in front of a lens catches the room."
+
+[[param]]
+key = "amount"
+label = "Amount"
+min = 0
+max = 100
+default = 50
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"

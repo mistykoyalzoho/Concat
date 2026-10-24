@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.club-colour"
+name = "Club Colour"
+kind = "effect"
+category = "Vibe"
+shelves = ["Party & Club"]
+order = 89
+description = "The colour wheel turned slowly under the picture, so a cutaway takes a new cast every second."
+
+[[param]]
+key = "amount"
+label = "Amount"
+min = 0
+max = 100
+default = 60
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"

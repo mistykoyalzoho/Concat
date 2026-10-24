@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.slice-glitch"
+name = "Slice"
+kind = "effect"
+category = "Glitch"
+shelves = ["Distortion & Glitch"]
+order = 86
+description = "Sixteen bands of the frame shoved sideways and flickered: the broken-buffer look."
+
+[[param]]
+key = "amount"
+label = "Amount"
+min = 0
+max = 100
+default = 50
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"

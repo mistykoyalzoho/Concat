@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.wave-distort"
+name = "Wave"
+kind = "effect"
+category = "Distort"
+shelves = ["Distortion & Glitch"]
+order = 84
+description = "Rows pushed sideways on a sine so the frame ripples like heat off a road."
+
+[[param]]
+key = "amplitude"
+label = "Amplitude"
+min = 0
+max = 100
+default = 40
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"

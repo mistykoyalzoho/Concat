@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.static-noise"
+name = "Static"
+kind = "effect"
+category = "Glitch"
+shelves = ["Distortion & Glitch"]
+order = 85
+description = "Snow on the picture, every pixel offset by its own hash."
+
+[[param]]
+key = "amount"
+label = "Amount"
+min = 0
+max = 100
+default = 40
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"

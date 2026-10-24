@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.crt-bend"
+name = "CRT Bend"
+kind = "effect"
+category = "Retro"
+shelves = ["Distortion & Glitch", "Retro & Film"]
+order = 87
+description = "A tube's barrel, its dark line on every other row and its dimmer corners."
+
+[[param]]
+key = "curve"
+label = "Curve"
+min = 0
+max = 100
+default = 30
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"

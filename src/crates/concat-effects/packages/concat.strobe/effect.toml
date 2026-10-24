@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.strobe"
+name = "Strobe"
+kind = "effect"
+category = "Light"
+shelves = ["Party & Club"]
+order = 88
+description = "A hard flash four times a second, sharpest at the top of each beat."
+
+[[param]]
+key = "strength"
+label = "Strength"
+min = 0
+max = 100
+default = 55
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"

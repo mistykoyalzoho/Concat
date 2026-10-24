@@ -1,0 +1,32 @@
+[[probe]]
+name = "default, a grey"
+input = [0.18, 0.18, 0.18, 1.0]
+expect = [0.202395, 0.187838, 0.197916, 1.0]
+
+[[probe]]
+name = "default, a highlight past white"
+input = [4.0, 1.0, 0.05, 1.0]
+expect = [4.022395, 1.007838, 0.067916, 1.0]
+
+[[probe]]
+name = "default, half transparent"
+input = [0.5, 0.2, 0.1, 0.5]
+expect = [0.522395, 0.207838, 0.117916, 0.5]
+
+[[probe]]
+name = "minimum, a grey"
+at = "min"
+input = [0.18, 0.18, 0.18, 1.0]
+expect = [0.18, 0.18, 0.18, 1.0]
+
+[[probe]]
+name = "maximum, a grey"
+at = "max"
+input = [0.18, 0.18, 0.18, 1.0]
+expect = [0.217326, 0.193064, 0.209861, 1.0]
+
+[[probe]]
+name = "maximum, a highlight past white"
+at = "max"
+input = [4.0, 1.0, 0.05, 1.0]
+expect = [4.037326, 1.013064, 0.079861, 1.0]
